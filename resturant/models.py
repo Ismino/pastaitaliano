@@ -6,7 +6,6 @@ from django.utils import timezone
 # Define choices for reservation status
 # Inspired by CodeInstitute models for Django Blog app
 STATUS_CHOICES = (
-    (0, 'Pending'),
     (1, 'Confirmed'),
     (2, 'Cancelled'),
 )
@@ -31,7 +30,7 @@ class Table(models.Model):
 #Class fot the reservaton info and a validation error if the reservation is done in the past
 class Reservation(models.Model):
     table = models.ForeignKey(Table, on_delete=models.CASCADE)
-    customer = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     reservation_datetime = models.DateTimeField()
     status = models.IntegerField(choices=STATUS_CHOICES, default=0)
 
@@ -42,9 +41,6 @@ class Reservation(models.Model):
 
     def __str__(self):
         return f"Reservation for {self.customer.username} at {self.table.restaurant.name}"
-
-    def is_pending(self):
-        return self.status == 0
 
     def is_confirmed(self):
         return self.status == 1
