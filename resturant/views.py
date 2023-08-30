@@ -27,7 +27,27 @@ def search_reservation(request):
     form = ReservationSearchForm(request.GET)
     reservations = Booking.objects.filter(user=request.user)
 
-    
+    if.form.is_valid():
+        reservation_date = form.cleaned_data.get('reservation_date', 'Not found')
+        user_name = form.cleaned_data.get('user_name', 'Not found')
+        status = form.cleaned_data.get('status')
+
+        if reservation_date:
+            reservations = reservations.filter(reservation_date_and_time__date=reservation_date)
+
+        if customer_name:
+            reservations = reservations.filter(customer_name__icontains=customer_name)
+
+        if status:
+            reservations = reservations.filter(status=status)
+
+    context = {
+        'form': form,
+        'reservations': reservations,
+    }
+    return render(request, 'restaurant/search_reservations.html', context)
+
+        
 
 
 
