@@ -2,8 +2,16 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import Table, Reservation, STATUS_CHOICES
 from .forms import ReservationForm, ReservationSearchForm 
+from django.contrib import messages
 
+def home_page(request):
+    return render(request, 'restaurant/index.html')
 
+def contact_page(request):
+    return render(request, 'restaurant/contact.html')
+
+def menu_page(request):
+    return render(request, 'restaurant/menu.html')
 
 @login_required
 def make_reservation(request):
@@ -29,7 +37,7 @@ def search_reservation(request):
     form = ReservationSearchForm(request.GET)
     reservation = Booking.objects.filter(user=request.user)
 
-    if.form.is_valid():
+    if form.is_valid():
         reservation_date = form.cleaned_data.get('reservation_date', 'Not found')
         user_name = form.cleaned_data.get('user_name', 'Not found')
         status = form.cleaned_data.get('status')
