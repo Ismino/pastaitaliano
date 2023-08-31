@@ -5,13 +5,13 @@ from .forms import ReservationForm, ReservationSearchForm
 from django.contrib import messages
 
 def home_page(request):
-    return render(request, 'restaurant/index.html')
+    return render(request, 'index.html')
 
 def contact_page(request):
-    return render(request, 'restaurant/contact.html')
+    return render(request, 'contact.html')
 
 def menu_page(request):
-    return render(request, 'restaurant/menu.html')
+    return render(request, 'menu.html')
 
 @login_required
 def make_reservation(request):
@@ -30,7 +30,7 @@ def make_reservation(request):
     context = {
         'form': form
         }
-    return render(request, 'restaurant/make_reservation.html', context)
+    return render(request, 'make_reservation.html', context)
 
 @login_required
 def search_reservation(request):
@@ -55,7 +55,7 @@ def search_reservation(request):
         'form': form,
         'reservation': reservation,
     }
-    return render(request, 'restaurant/search_reservations.html', context)
+    return render(request, 'search_reservations.html', context)
 
 @login_required
 def view_reservation(request):
@@ -63,7 +63,7 @@ def view_reservation(request):
     context = {
         'reservation': reservation
         } 
-    return render(request, 'restaurant/view_reservation.html', context)
+    return render(request, 'view_reservation.html', context)
 
 @login_required
 def edit_or_delete_reservation(request, reservation_id):
@@ -90,7 +90,7 @@ def edit_or_delete_reservation(request, reservation_id):
     context = {
         'form': form
     }
-    return render(request, 'restaurant/edit_or_delete_reservation.html', context)
+    return render(request, 'edit_or_delete_reservation.html', context)
 
            
 
