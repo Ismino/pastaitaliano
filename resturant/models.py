@@ -40,7 +40,7 @@ class Reservation(models.Model):
             raise ValidationError("Reservation date and time cannot be in the past.")
 
     def __str__(self):
-        return f"Reservation for {self.customer.username} at {self.table.restaurant.name}"
+        return f"Reservation for {self.user.username} at {self.table.name}"
 
     def is_confirmed(self):
         return self.status == 1
