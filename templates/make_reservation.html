@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% csrf_token %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h1 class="text-center">Reservation Form</h1>
+            <form method="POST" action="{% url 'make_reservation' %}" name="form">
+
+                {{ form|crispy }}
+
+
+                {% csrf_token %}
+
+
+                <div class="intro-button mx-auto"><button class="btn btn-primary btn-xl"
+                        type="submit">Submit Reservation</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
