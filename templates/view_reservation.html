@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Reservations</h1>
+
+    {% if reservations %}
+    <div class="row">
+        {% for reservation in reservations %}
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Reservation ID: {{ reservation.id }}</h5>
+                    <p class="card-text">Customer Name: {{ reservation.customer_name }}</p>
+                    <p class="card-text">Reservation Date and Time: {{ reservation.reservation_date_and_time }}</p>
+                    <a class="btn btn-primary" href="/edit/{{ reservation.id }}">Edit</a>
+                    <a class="btn btn-danger" href="/delete/{{ reservation.id }}">Delete</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No reservations available.</p>
+    {% endif %}
+</div>
+{% endblock content %}
