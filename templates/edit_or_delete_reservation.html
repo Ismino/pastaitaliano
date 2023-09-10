@@ -9,10 +9,17 @@
         <div class="col">
             <h1>Edit or Delete Reservation</h1>
             <p><a href="{% url 'view_reservation' %}">Click here to go back to the reservation!</a></p>
-            
+        </div>
+        <div class="row">
+            <div class="col">
+                <form method="post">
 
+                    {{form|crispy}}
 
-            
+                    {% csrf_token %}
+
+                </form>
+            </div>
         </div>
     </div>
 </div>
