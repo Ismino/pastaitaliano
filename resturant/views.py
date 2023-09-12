@@ -46,7 +46,7 @@ def search_reservation(request):
             reservation = reservation.filter(reservation_date_and_time__date=reservation_date)
 
         if user_name:
-            reservation = reservation.filter(customer_name__icontains=customer_name)
+            reservation = reservation.filter(user_name__icontains=user_name)
 
         if status:
             reservation = reservation.filter(status=status)

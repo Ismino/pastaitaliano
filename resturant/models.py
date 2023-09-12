@@ -6,6 +6,7 @@ from django.utils import timezone
 # Define choices for reservation status
 # Inspired by CodeInstitute models for Django Blog app
 STATUS_CHOICES = (
+    (0,'Undefined'),
     (1, 'Confirmed'),
     (2, 'Cancelled'),
 )
