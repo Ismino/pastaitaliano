@@ -18,8 +18,8 @@
 
     <h2>Search Results</h2>
     <ul>
-        {% for booking in reservation %}
-            <li>{{ booking.customer_name }} - {{ booking.reservation_date_and_time }}</li>
+        {% for reservation in reservation %}
+            <li>{{ reservation.user_name }} - {{ reservation.reservation_date_and_time }}</li>
         {% empty %}
             <li>No reservations found.</li>
         {% endfor %}
