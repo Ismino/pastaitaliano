@@ -22,6 +22,5 @@ class ReservationForm(forms.ModelForm):
 
 class ReservationSearchForm(forms.ModelForm):
     reservation_date_and_time = forms.DateField(label='Date and time for reservation', required=False, widget=forms.DateInput(attrs={'type': 'date'}))
-    
 
 
