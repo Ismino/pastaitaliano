@@ -46,17 +46,29 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'resturant',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'resturant',
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+AUTHENTICATION_CLASSES = [
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+
 
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
