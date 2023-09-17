@@ -35,7 +35,7 @@ def make_reservation(request):
 @login_required
 def search_reservation(request):
     form = ReservationSearchForm(request.GET)
-    reservation = Booking.objects.filter(user=request.user)
+    reservation = Reservation.objects.filter(user=request.user)
 
     if form.is_valid():
         reservation_date = form.cleaned_data.get('reservation_date', 'Not found')
@@ -43,14 +43,14 @@ def search_reservation(request):
         status = form.cleaned_data.get('status')
 
         if reservation_date:
-            reservation = reservation.filter(reservation_date_and_time__date=reservation_date)
+            reservation = reservation.filter(reservation_datetime__date=reservation_date)
 
         if user_name:
-            reservation = reservation.filter(user_name__icontains=user_name)
+            reservation = reservation.filter(user__username__icontains=user_name)
 
         if status:
             reservation = reservation.filter(status=status)
-
+            
     context = {
         'form': form,
         'reservation': reservation,
