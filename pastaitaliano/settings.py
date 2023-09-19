@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ismino-pastaitaliano-5qu8b8ynrv3.ws-eu104.gitpod.io', 'pastaitaliano.herokuapp.com', 'localhost', 'pastaitaliano-4a14a7e65e7b.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ismino-pastaitaliano-5qu8b8ynrv3.ws-eu104.gitpod.io', '8000-ismino-pastaitaliano-3zvrh1byh9i.ws-eu104.gitpod.io', 'pastaitaliano.herokuapp.com', 'localhost', 'pastaitaliano-4a14a7e65e7b.herokuapp.com']
 
 
 # Application definition
@@ -113,8 +113,13 @@ WSGI_APPLICATION = 'pastaitaliano.wsgi.application'
 #    }
 #}
 
+#DATABASES = {
+#    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+#}
+
+DATABASE_URL = os.getenv('DATABASE_URL')
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.config(),
 }
 
 
