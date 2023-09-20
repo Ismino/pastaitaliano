@@ -26,7 +26,7 @@ class Table(models.Model):
     max_people = models.IntegerField()
 
     def __str__(self):
-        return f"Table at {self.restaurant.name} - Seats: {self.seats}"
+        return f"Table at {self.restaurant.name} - Seats: {self.seats} - Minimum people: {self.min_people} - Max people {self} "
 
 #Class fot the reservaton info and a validation error if the reservation is done in the past
 class Reservation(models.Model):
