@@ -1,11 +1,17 @@
+from tempus_dominus.widgets import DateTimePicker
 from django import forms
 from .models import Reservation
 from datetime import datetime
+from django.utils import timezone
 
 class ReservationForm(forms.ModelForm):
     class Meta:
         model = Reservation
         fields = ['table', 'user', 'reservation_datetime']
+
+        widgets = {
+            'reservation_datetime': forms.DateTimeInput(attrs={'type': 'datetime-local'}),
+        }
 
     def clean_reservation_datetime(self):
         reservation_datetime = self.cleaned_data.get('reservation_datetime')

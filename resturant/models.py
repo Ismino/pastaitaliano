@@ -12,21 +12,20 @@ STATUS_CHOICES = (
 )
 
 # Class for the resturant name to be used in relations to the other Classes
-class Restaurant(models.Model):
-    name = models.CharField(max_length=200)
+#class Restaurant(models.Model):
+#    name = models.CharField(max_length=200)
 
-    def __str__(self):
-        return self.name
+#    def __str__(self):
+#       return self.name
 
 # Class for the Table that handels the seats and info of the table 
 class Table(models.Model):
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     seats = models.IntegerField()
     min_people = models.IntegerField()
     max_people = models.IntegerField()
 
     def __str__(self):
-        return f"Table at {self.restaurant.name} - Seats: {self.seats} - Minimum people: {self.min_people} - Max people {self} "
+        return f" - Seats: {self.seats} - Minimum people: {self.min_people} - Max people: {self.max_people} "
 
 #Class fot the reservaton info and a validation error if the reservation is done in the past
 class Reservation(models.Model):
