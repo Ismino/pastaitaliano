@@ -3,15 +3,20 @@
 {% block content %}
 
 {% csrf_token %}
-
-<div class="container-fluid">
-    <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="https://res.cloudinary.com/dsbf1gec0/image/upload/v1693564449/spagetti_egdinv.jpg" alt="spagetthipic" width="72" height="57">
-        <h1 class="display-5 fw-bold">Pasta Italiano</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Welcome to Pasta Italiano. Come and enjoy a world-class Italian pasta. We guarantee you a high class taste experience and a first class environment</p>
-        </div>
-    </div>
-</div>   
+ 
+<section class="page-section clearfix">
+  <div class="container">
+      <div class="intro">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="https://res.cloudinary.com/dsbf1gec0/image/upload/v1695309744/spaghetti-6639970_1280_qtkazm.jpg" alt="Girl with tray of food and driks" />
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded text-home">
+              <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Pasta Italiano</span>
+              </h2>
+              <p class="mb-3">Welcome to Pasta Italiano. Come and enjoy a world-class Italian pasta. We guarantee you a high class taste experience and a first class environmen</p>
+                  <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="{% url 'make_reservation' %}">Visit Us Today!</a></div>
+          </div>
+      </div>
+  </div>
+</section>
 
 {%endblock%}
