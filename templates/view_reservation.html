@@ -7,15 +7,15 @@
 <div class="container">
     <h1>Reservations</h1>
 
-    {% if reservations %}
+    {% if reservation %}
     <div class="row">
-        {% for reservation in reservations %}
+        {% for res in reservation %}
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">Reservation ID: {{ reservation.id }}</h5>
-                    <p class="card-text">Customer Name: {{ reservation.customer_name }}</p>
-                    <p class="card-text">Reservation Date and Time: {{ reservation.reservation_date_and_time }}</p>
+                    <p class="card-text">Customer Name: {{ res.user.username }}</p>
+                    <p class="card-text">Reservation Date and Time: {{ res.reservation_datetime }}</p>
                     <a class="btn btn-primary" href="/edit/{{ reservation.id }}">Edit</a>
                     <a class="btn btn-danger" href="/delete/{{ reservation.id }}">Delete</a>
                 </div>

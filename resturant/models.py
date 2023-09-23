@@ -32,7 +32,7 @@ class Reservation(models.Model):
     table = models.ForeignKey(Table, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     reservation_datetime = models.DateTimeField()
-    status = models.IntegerField(choices=STATUS_CHOICES, default=0)
+    status = models.IntegerField(choices=STATUS_CHOICES, default=1)
 
     # Inspiered method from https://github.com/renatalantos/booking-system/blob/main/restaurant/models.py  
     def ValidationHandler(self):
@@ -40,7 +40,7 @@ class Reservation(models.Model):
             raise ValidationError("Reservation date and time cannot be in the past.")
 
     def __str__(self):
-        return f"Reservation for {self.user.username} at {self.table.name}"
+        return f"Reservation for {self.user.username} at {self.table}"
 
     def is_confirmed(self):
         return self.status == 1

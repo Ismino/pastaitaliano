@@ -20,7 +20,7 @@ def make_reservation(request):
         if form.is_valid():
             reservation = form.save(commit=False)
             reservation.user = request.user
-            reservation.status = STATUS_CHOICES[0][0]
+            reservation.status = 1
             reservation.save()
             messages.success(request, 'Reservation successfully made.')
             return redirect('view_reservation')
@@ -35,25 +35,25 @@ def make_reservation(request):
 @login_required
 def search_reservation(request):
     form = ReservationSearchForm(request.GET)
-    reservation = Reservation.objects.filter(user=request.user)
+    reservations = Reservation.objects.filter(user=request.user)
 
     if form.is_valid():
-        reservation_date = form.cleaned_data.get('reservation_date', 'Not found')
-        user_name = form.cleaned_data.get('user_name', 'Not found')
+        reservation_date = form.cleaned_data.get('reservation_date')
+        user_name = form.cleaned_data.get('user_name')
         status = form.cleaned_data.get('status')
 
         if reservation_date:
-            reservation = reservation.filter(reservation_datetime__date=reservation_date)
+            reservations = reservations.filter(reservation_datetime__date=reservation_date)
 
         if user_name:
-            reservation = reservation.filter(user__username__icontains=user_name)
+            reservations = reservations.filter(user__username__icontains=user_name)
 
         if status:
-            reservation = reservation.filter(status=status)
+            reservations = reservations.filter(status=status)
             
     context = {
         'form': form,
-        'reservation': reservation,
+        'reservations': reservations,
     }
     return render(request, 'search_reservations.html', context)
 
