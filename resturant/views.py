@@ -33,28 +33,33 @@ def make_reservation(request):
     return render(request, 'make_reservation.html', context)
 
 @login_required
+
 def search_reservation(request):
-    form = ReservationSearchForm(request.GET)
-    reservations = Reservation.objects.filter(user=request.user)
+    if request.method == 'POST':
+        form = ReservationSearchForm(request.POST)
+        if form.is_valid():
+            reservation_date = form.cleaned_data['reservation_date']
+            user = request.user
 
-    if form.is_valid():
-        reservation_date = form.cleaned_data.get('reservation_date')
-        user_name = form.cleaned_data.get('user_name')
-        status = form.cleaned_data.get('status')
+            # Search for reservations
+            reservations = Reservation.objects.filter(
+                user=request.user,
+                reservation_datetime__date=reservation_date
+            )
 
-        if reservation_date:
-            reservations = reservations.filter(reservation_datetime__date=reservation_date)
+            context = {
+                'form': form,
+                'reservations': reservations
+            }
 
-        if user_name:
-            reservations = reservations.filter(user__username__icontains=user_name)
+            return render(request, 'search_reservations.html', context)
+    else:
+        form = ReservationSearchForm()
 
-        if status:
-            reservations = reservations.filter(status=status)
-            
     context = {
-        'form': form,
-        'reservations': reservations,
+        'form': form
     }
+
     return render(request, 'search_reservations.html', context)
 
 @login_required

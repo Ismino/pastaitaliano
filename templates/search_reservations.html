@@ -7,7 +7,7 @@
 <div class="container">
     <h1>Search Reservations</h1>
 
-    <form method="get">
+    <form method="post">
 
         {{ form|crispy }}
 
@@ -18,8 +18,8 @@
 
     <h2>Search Results</h2>
     <ul>
-        {% for reservation in reservation %}
-            <li>{{ reservation.user_name }} - {{ reservation.reservation_date_and_time }}</li>
+        {% for res in reservations %}
+            <li> {{ res.user.username }} - {{ res.reservation_datetime }}</li>
         {% empty %}
             <li>No reservations found.</li>
         {% endfor %}
