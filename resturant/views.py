@@ -83,6 +83,7 @@ def edit_or_delete_reservation(request, reservation_id):
             # Handle reservation deletion
             if reservation.delete():
                 messages.success(request, 'Your reservation has been deleted.')
+            return redirect('view_reservations')
         else:
             # Handle reservation editing
             form = ReservationForm(request.POST, instance=reservation)
@@ -91,8 +92,7 @@ def edit_or_delete_reservation(request, reservation_id):
                 reservation.user = request.user
                 reservation.save()
                 messages.success(request, 'Your reservation has been updated.')
-
-        return redirect('view_reservations')
+        return redirect('view_reservation')
 
     form = ReservationForm(instance=reservation)
     context = {
