@@ -35,7 +35,6 @@ def make_reservation(request):
     return render(request, 'make_reservation.html', context)
 
 @login_required
-
 def search_reservation(request):
     if request.method == 'POST':
         form = ReservationSearchForm(request.POST)
@@ -83,7 +82,7 @@ def edit_or_delete_reservation(request, reservation_id):
             # Handle reservation deletion
             if reservation.delete():
                 messages.success(request, 'Your reservation has been deleted.')
-            return redirect('view_reservations')
+            return redirect('view_reservation')
         else:
             # Handle reservation editing
             form = ReservationForm(request.POST, instance=reservation)
