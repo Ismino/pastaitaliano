@@ -29,6 +29,7 @@ class Table(models.Model):
 
 #Class fot the reservaton info and a validation error if the reservation is done in the past
 class Reservation(models.Model):
+    id = models.AutoField(primary_key=True)
     table = models.ForeignKey(Table, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     reservation_datetime = models.DateTimeField()

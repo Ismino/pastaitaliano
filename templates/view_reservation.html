@@ -13,11 +13,9 @@
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Reservation ID: {{ reservation.id }}</h5>
-                    <p class="card-text">Customer Name: {{ res.user.username }}</p>
+                    <p class="card-text">Customer: {{ res.user.username }}</p>
                     <p class="card-text">Reservation Date and Time: {{ res.reservation_datetime }}</p>
-                    <a class="btn btn-primary" href="/edit/{{ reservation.id }}">Edit</a>
-                    <a class="btn btn-danger" href="/delete/{{ reservation.id }}">Delete</a>
+                    <a class="btn btn-primary" href="{% url 'edit_or_delete_reservation' res.id %}">Edit or Delete</a>
                 </div>
             </div>
         </div>

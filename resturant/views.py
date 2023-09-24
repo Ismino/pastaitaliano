@@ -3,6 +3,8 @@ from django.contrib.auth.decorators import login_required
 from .models import Table, Reservation, STATUS_CHOICES
 from .forms import ReservationForm, ReservationSearchForm 
 from django.contrib import messages
+from django.urls import reverse
+
 
 def home_page(request):
     return render(request, 'index.html')
@@ -73,6 +75,7 @@ def view_reservation(request):
 @login_required
 def edit_or_delete_reservation(request, reservation_id):
     reservation = get_object_or_404(Reservation, id=reservation_id)
+    url = reverse('edit_or_delete_reservation', args=[reservation.id])
     
     if request.method == "POST":
         # Check if a 'delete' parameter is present in the POST data
