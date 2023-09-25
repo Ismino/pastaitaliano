@@ -9,4 +9,22 @@
 
 #logo {
     font-family: 'Lobster Two', cursive;
+    color: #fff;
+}
+
+#index-logo {
+    font-family: 'Lobster Two', cursive;
+}
+
+.navbar {
+    background-color: rgb(27, 71, 27);
+    height: 80px;
+}
+
+#navbar {
+    background-color: rgb(27, 71, 27);
+}
+
+#navbarNav {
+    color: #fff;
 }
