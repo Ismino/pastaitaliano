@@ -44,3 +44,12 @@
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
 }
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+
+}
