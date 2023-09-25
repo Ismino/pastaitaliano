@@ -28,3 +28,19 @@
 #navbarNav {
     color: #fff;
 }
+.navbar-toggler {
+    color: #fff;
+    background-color: #fff;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-nav .nav-item {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
