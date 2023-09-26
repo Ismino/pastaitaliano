@@ -85,7 +85,7 @@ body {
 }
 
 .login {
-    margin: 50px;
+    margin-top: 50px;
     font-family: 'Lobster Two', cursive;
     align-items: center;
 }
@@ -98,4 +98,8 @@ body {
 
 #col {
     width: 100%;
+}
+
+.primaryAction.btn.btn-primary {
+    margin-left: 20px;
 }
