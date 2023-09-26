@@ -10,10 +10,13 @@
 #logo {
     font-family: 'Lobster Two', cursive;
     color: #fff;
+    font-size: 40px;
+    margin-left: 5px;
 }
 
 #index-logo {
     font-family: 'Lobster Two', cursive;
+    font-size: 40px;
 }
 
 .navbar {
@@ -31,6 +34,7 @@
 .navbar-toggler {
     color: #fff;
     background-color: #fff;
+    margin-right: 5px;
 }
 
 .navbar-toggler-icon {
@@ -51,5 +55,16 @@
     margin-bottom: 0;
     padding-left: 0;
     padding-bottom: 0;
+
+}
+
+.mb-3 {
+    font-size: 20px;
+}
+
+.row row-cols-1 row-cols-md-3 g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
 }
