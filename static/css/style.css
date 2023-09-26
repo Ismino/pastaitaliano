@@ -70,14 +70,32 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 50px;
 
 }
 
 body {
     display: flex;
     flex-direction: column;
+    
 }
 
 .mb-3 flex justify-center w-full mx-auto {
     margin: 50px;
+}
+
+.login {
+    margin: 50px;
+    font-family: 'Lobster Two', cursive;
+    align-items: center;
+}
+.row.row-cols-1.row-cols-md-3.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 50px;
+}
+
+#col {
+    width: 100%;
 }
