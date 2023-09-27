@@ -84,8 +84,8 @@ body {
     
 }
 
-.mb-3 flex justify-center w-full mx-auto {
-    margin: 50px;
+.mb-3.flex justify-center w-full mx-auto {
+    margin-bottom: 100px;
 }
 
 .login {
@@ -98,6 +98,13 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     margin: 50px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 100px;
+}
+
+.accountalready {
+    margin: 20px;
 }
 
 #col {
