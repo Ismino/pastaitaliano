@@ -62,6 +62,10 @@
 
 }
 
+#hanging-icons {
+    margin: 50px;
+}
+
 .mb-3 {
     font-size: 20px;
 }
@@ -102,4 +106,25 @@ body {
 
 .primaryAction.btn.btn-primary {
     margin-left: 20px;
+}
+
+#contact {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+}
+
+.phone {
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.email {
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contact-id {
+    font-size: 25px;
 }
