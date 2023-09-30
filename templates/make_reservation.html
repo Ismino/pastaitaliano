@@ -7,9 +7,9 @@
 {% load crispy_forms_tags %}
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="row-makereservation">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h1 class="text-center">Make a Reservation</h1>
+            <h1 class="text-center" id="centered-h1">Make a Reservation</h1>
             <form method="POST" action="{% url 'make_reservation' %}" name="form">
 
                 {{ form|crispy }}
@@ -22,7 +22,7 @@
                         type="submit">Submit Reservation</button>
                 </div>
                 <div class="col-md-8 mt-3 offset-md-2">
-                    <h3 class="text-center">Opening Hours: 9am to 9pm</h3>
+                    <h3 class="text-center" id="centered-h3">Opening Hours: 9am to 9pm</h3>
                 </div>
 
             </form>

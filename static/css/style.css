@@ -114,7 +114,7 @@ body {
 .primaryAction.btn.btn-primary {
     margin-left: 20px;
 }
-
+/* Contact Style */
 #contact {
     font-family: 'Lobster Two', cursive;
     font-size: 40px;
@@ -134,4 +134,56 @@ body {
 
 #contact-id {
     font-size: 25px;
+}
+/* Make Reservation Styles*/
+label {
+    margin: 10px;
+    align-items: center;
+}
+
+#row-makereservation {
+    margin: 50px 50px 130px 50px;
+}
+
+#centered-h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+}
+
+#centered-h3 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.btn.btn-outline-secondary {
+    margin-top: 25px;
+}
+
+/*Search Reservation Styles*/
+
+.container.col-md-8.mt-3.offset-md-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 50px auto 200px;
+}
+
+#h1-search {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#btn-search {
+    display: block;
+    margin: 10px auto 20px auto;
+    text-align: center;
+}
+
+/* View Reservations*/
+
+#h1reservation {
+    
 }
