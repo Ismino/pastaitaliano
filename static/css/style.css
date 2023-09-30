@@ -1,10 +1,16 @@
 .intro-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 35%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+}
+
+#btn-intro {
+    background-color: #fff;
+    border-color: #fff;
+    color: rgb(23, 88, 23);
 }
 
 #logo {
@@ -101,7 +107,7 @@ body {
     margin: 50px;
     align-items: center;
     align-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .accountalready {
@@ -222,4 +228,27 @@ label {
 
 #btn-logout {
     margin-bottom: 200px;
+}
+ /* Picture for menu*/
+.row.row-cols-1.row-cols-md-3.g-4 {
+    background-image: url('https://res.cloudinary.com/dsbf1gec0/image/upload/v1696101625/istock_spjabk.jpg');
+}
+
+/* footer */
+
+.py-3.my-4 {
+    background-color: #ce2a2a;
+    color: #fff;
+    padding: 40px;
+    margin: 0;
+}
+.nav-item.nav-link.px-2.text-muted {
+    color: #fff;
+}
+
+.nav.justify-content-center.border-bottom.pb-3.mb-3 a {
+    color: #fff;
+}
+#text-muted {
+    color: #fff;
 }
