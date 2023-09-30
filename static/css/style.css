@@ -185,5 +185,22 @@ label {
 /* View Reservations*/
 
 #h1reservation {
-    
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Edit or delete reservation */
+
+#h1-edit {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.btn.btn-outline-danger {
+    margin-top: 25px;
+    margin-left: 5px;
 }
