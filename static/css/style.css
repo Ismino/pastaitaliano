@@ -68,6 +68,7 @@
 
 .mb-3 {
     font-size: 20px;
+    margin-bottom: 200px;
 }
 
 .row row-cols-1 row-cols-md-3 g-4 {
@@ -84,8 +85,8 @@ body {
     
 }
 
-.mb-3.flex justify-center w-full mx-auto {
-    margin-bottom: 100px;
+.mb-3.flex.justify-center.w-full.mx-auto {
+    margin-bottom: 200px;
 }
 
 .login {
@@ -203,4 +204,22 @@ label {
 .btn.btn-outline-danger {
     margin-top: 25px;
     margin-left: 5px;
+}
+
+/* Logout */
+
+#div-logout {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+#h1logout {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#btn-logout {
+    margin-bottom: 200px;
 }
