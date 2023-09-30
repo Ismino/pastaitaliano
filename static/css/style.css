@@ -243,12 +243,16 @@ label {
     margin: 0;
 }
 .nav-item.nav-link.px-2.text-muted {
-    color: #fff;
+    color: #fff !important;
 }
 
 .nav.justify-content-center.border-bottom.pb-3.mb-3 a {
-    color: #fff;
+    color: #fff !important;
 }
 #text-muted {
-    color: #fff;
+    color: #fff !important;
+}
+
+.text-center.text-muted {
+    color: #fff !important;
 }
