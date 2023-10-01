@@ -88,6 +88,7 @@
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     
 }
 
@@ -240,19 +241,42 @@ label {
     background-color: #ce2a2a;
     color: #fff;
     padding: 40px;
-    margin: 0;
+    margin: 0 !important;
 }
 .nav-item.nav-link.px-2.text-muted {
     color: #fff !important;
+    font-size: 40px;
 }
 
 .nav.justify-content-center.border-bottom.pb-3.mb-3 a {
     color: #fff !important;
 }
+
+#footer {
+    padding: 0 !important;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+}
+
 #text-muted {
     color: #fff !important;
 }
 
 .text-center.text-muted {
     color: #fff !important;
+}
+
+.fab.fa-instagram {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fab.fa-twitter {
+    font-size: 30px;
+}
+.fab.fa-facebook {
+    font-size: 30px;
+}
+footer {
+    margin-top: auto;
 }
