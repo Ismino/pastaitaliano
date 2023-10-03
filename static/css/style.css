@@ -41,6 +41,7 @@
 #navbarNav {
     color: #fff;
 }
+
 .navbar-toggler {
     color: #fff;
     background-color: #fff;
@@ -89,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+
 }
 
 .mb-3.flex.justify-center.w-full.mx-auto {
@@ -101,6 +102,7 @@ body {
     font-family: 'Lobster Two', cursive;
     align-items: center;
 }
+
 .row.row-cols-1.row-cols-md-3.g-4 {
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +124,7 @@ body {
 .primaryAction.btn.btn-primary {
     margin-left: 20px;
 }
+
 /* Contact Style */
 #contact {
     font-family: 'Lobster Two', cursive;
@@ -143,6 +146,7 @@ body {
 #contact-id {
     font-size: 25px;
 }
+
 /* Make Reservation Styles*/
 label {
     margin: 10px;
@@ -230,7 +234,8 @@ label {
 #btn-logout {
     margin-bottom: 200px;
 }
- /* Picture for menu*/
+
+/* Picture for menu*/
 .row.row-cols-1.row-cols-md-3.g-4 {
     background-image: url('https://res.cloudinary.com/dsbf1gec0/image/upload/v1696101625/istock_spjabk.jpg');
 
@@ -244,6 +249,7 @@ label {
     padding: 40px;
     margin: 0 !important;
 }
+
 .nav-item.nav-link.px-2.text-muted {
     color: #fff !important;
     font-size: 40px;
@@ -272,20 +278,24 @@ label {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .fab.fa-twitter {
     font-size: 30px;
 }
+
 .fab.fa-facebook {
     font-size: 30px;
 }
+
 footer {
     margin-top: auto;
 }
+
 /* Menu */
 .card {
     width: 100% !important;
     max-width: 100% !important;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .col-12 {
@@ -297,48 +307,60 @@ footer {
 .navbar-nav .nav-item.dropdown.show .dropdown-menu {
     background-color: rgb(27, 71, 27);
 }
+
 .navbar-collapse.show {
     background-color: rgb(27, 71, 27);
     padding-bottom: 60px;
 }
+
 @media (max-width: 992px) {
-body.navbar-expanded {
-    overflow-x: hidden;
-    position: relative;
-    transition: margin-left 0.5s;
+    body.navbar-expanded {
+        overflow-x: hidden;
+        position: relative;
+        transition: margin-left 0.5s;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(27, 71, 27);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .navbar-expanded .container {
+
+        transition: margin-top 0.5s;
+    }
+
+    .navbar-toggler {
+        z-index: 1100;
+    }
+
+    body.navbar-expanded {
+        overflow: hidden;
+    }
+
+    body.navbar-expanded .container {
+        pointer-events: none;
+    }
+
+    body.navbar-expanded .navbar-collapse.show {
+        pointer-events: auto;
+    }
+
 }
 
-.navbar-collapse {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-color: rgb(27, 71, 27); 
-    z-index: 1000;
-    overflow-y: auto;
-}
-
-.navbar-expanded .container {
-     
-    transition: margin-top 0.5s; 
-}
-
-.navbar-toggler {
-    z-index: 1100;
-}
-body.navbar-expanded {
-    overflow: hidden;
-}
-
-body.navbar-expanded .container {
-    pointer-events: none;
-}
-
-body.navbar-expanded .navbar-collapse.show {
-    pointer-events: auto;
-}
-
-
-
+@media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 0;
+    }
+    .navbar-expanded {
+        position: absolute;
+        right: 5px;
+    }
 }
