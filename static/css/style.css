@@ -147,6 +147,17 @@ body {
     font-size: 25px;
 }
 
+.row.g-4.py-5.row-cols-1.row-cols-lg-3 {
+    margin: 50px;
+}
+
+/* Map */
+
+#map {
+    width: 100%;
+    height: 250px;
+}
+
 /* Make Reservation Styles*/
 label {
     margin: 10px;
@@ -359,6 +370,7 @@ footer {
         position: absolute;
         right: 0;
     }
+
     .navbar-expanded {
         position: absolute;
         right: 5px;
