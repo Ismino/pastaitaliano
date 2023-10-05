@@ -4,39 +4,36 @@
 
 {% csrf_token %}
 
-<div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom" id="contact">Contact Info:</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="col d-flex align-items-start">
-        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-            <i class="fa-solid fa-square-phone" id="contact-id"></i>
-        </div>
-        <div>
-          <h2 class="phone">Phone Number:</h2>
-          <p>Feel free to call us at our opening hours between 9am until 9pm. +1234567890 </p>
-        </div>
+<div class="container px-4 py-5 justify-center" id="hanging-icons">
+  <h2 class="pb-2 border-bottom col-12" id="contact">Contact Info:</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+        <i class="fa-solid fa-square-phone" id="contact-id"></i>
       </div>
-      <div class="col d-flex align-items-start">
-        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-            <i class="fa-solid fa-envelope" id="contact-id"></i>
-        </div>
-        <div>
-          <h2 class="email">Email:</h2>
-          <p>Email us anytime you need. We'll get back to you as soon as possible. info@pastaitaliano.com </p>
-        </div>
+      <div>
+        <h2 class="phone">Phone Number:</h2>
+        <p>Feel free to call us at our opening hours between 9am until 9pm. +1234567890 </p>
       </div>
-      <div class="col d-flex align-items-start">
-        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-            <i class="fa-solid fa-location-dot" id="contact-id"></i>
-        </div>
-        <div id="map">
-        </div>
-        <div>
-          <p>Adress:</p>
-        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+        <i class="fa-solid fa-envelope" id="contact-id"></i>
       </div>
+      <div>
+        <h2 class="email">Email:</h2>
+        <p>Email us anytime you need. We'll get back to you as soon as possible. info@pastaitaliano.com </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+        <i class="fa-solid fa-location-dot" id="contact-id"></i>
+      </div>
+      <div id="map">
       </div>
     </div>
   </div>
+</div>
+</div>
 
-  {%endblock%}
+{%endblock%}
