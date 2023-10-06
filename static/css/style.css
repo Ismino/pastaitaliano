@@ -379,3 +379,18 @@ footer {
         right: 5px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    
+    .intro-text {
+        display: contents;
+        color: rgb(27, 71, 27);
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    #btn-intro {
+        background-color: rgba(27, 71, 27, 0.425);
+        margin-bottom: 10px;
+    }
+}

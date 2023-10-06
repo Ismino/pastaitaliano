@@ -7,18 +7,22 @@
 {% load static %}
 
 <section class="page-section clearfix">
-  <div>
+    <div>
       <div class="intro">
-          <img class="d-block w-100" src="https://res.cloudinary.com/dsbf1gec0/image/upload/v1696103864/framsida_rnhwmk.jpg" alt="Girl with tray of food and driks" />
+        <div class="image-container">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dsbf1gec0/image/upload/v1696103864/framsida_rnhwmk.jpg" alt="Girl with tray of food and drinks" />
+        </div>
+        <div class="text-container">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded text-home">
-              <h2 class="section-heading mb-4" id="index-logo">
-                  <span class="section-heading-upper" id="index-logo"><strong>Pasta Italiano</strong></span>
-              </h2>
-              <p class="mb-3"><strong>Welcome to Pasta Italiano. Come and enjoy a world-class Italian pasta. We guarantee you a high class taste experience and a first class environmen</strong></p>
-                  <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" id="btn-intro" href="{% url 'make_reservation' %}">Visit Us Today!</a></div>
+            <h2 class="section-heading mb-4" id="index-logo">
+              <span class="section-heading-upper" id="index-logo"><strong>Pasta Italiano</strong></span>
+            </h2>
+            <p class="mb-3"><strong>Welcome to Pasta Italiano. Come and enjoy a world-class Italian pasta. We guarantee you a high-class taste experience and a first-class environment.</strong></p>
+            <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" id="btn-intro" href="{% url 'make_reservation' %}">Visit Us Today!</a></div>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 {%endblock%}
