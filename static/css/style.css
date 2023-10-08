@@ -44,8 +44,8 @@
 
 .navbar-toggler {
     color: #fff;
-    background-color: #fff;
-    margin-right: 5px;
+    background-color:rgba(27, 71, 27, 0.267);
+    margin-right: 10px;
 }
 
 .navbar-toggler-icon {
@@ -369,6 +369,8 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    /* Navbar on mobiles */
     .navbar-toggler {
         position: absolute;
         right: 0;
@@ -382,6 +384,8 @@ footer {
 
 @media screen and (max-width: 767px) {
     
+    /* Homepage on phone */
+
     .intro-text {
         display: contents;
         color: rgb(27, 71, 27);
@@ -393,4 +397,48 @@ footer {
         background-color: rgba(27, 71, 27, 0.425);
         margin-bottom: 10px;
     }
+    /* contactpage on phones*/
+
+    .container.px-4.py-5.justify-center {
+        margin: 5px;
+        margin-left: 5px !important;
+    }
+    #hanging-icons {
+        margin: 5px !important;
+        margin-left: 5px !important;
+    }
+    .row.g-4.py-5.row-cols-1.row-cols-lg-3 {
+        margin: 5px;
+    }
+    /* login page on phones */
+
+    .mb-3.flex.justify-center.w-full.mx-auto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #login_p {
+        margin-left: 15px;
+
+    }
+    .mx-auto {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    #id_remember {
+        display: none; 
+    }
+    label[for="id_remember"] {
+        display: none;
+    }
+    .primaryAction.btn.btn-primary {
+        margin: 5px;
+    }
+    form label,
+    form input {
+        display: inline-block; /* Display labels and inputs inline on small screens */
+        width: 80%; /* Make them take up 100% of the available width */
+        margin-bottom: 0.5em;
 }
