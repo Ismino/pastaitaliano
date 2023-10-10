@@ -317,13 +317,16 @@ footer {
 }
 
 /* Nav */
+#navbar .navbar-toggler-icon {
+    color: #fff !important; /* Set the color to white */
+}
 
 .navbar-nav .nav-item.dropdown.show .dropdown-menu {
-    background-color: rgb(27, 71, 27);
+    background-color: rgb(27, 71, 27);;
 }
 
 .navbar-collapse.show {
-    background-color: rgb(27, 71, 27);
+    background-color: rgb(27, 71, 27);;
     padding-bottom: 60px;
 }
 
@@ -340,7 +343,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(27, 71, 27);
+        background-color: rgb(33, 82, 33);
         z-index: 1000;
         overflow-y: auto;
     }
@@ -365,6 +368,9 @@ footer {
     body.navbar-expanded .navbar-collapse.show {
         pointer-events: auto;
     }
+    #navbar .navbar-toggler {
+        color: #fff !important; /* Set the color to white */
+    }
 
 }
 
@@ -374,11 +380,15 @@ footer {
     .navbar-toggler {
         position: absolute;
         right: 0;
+        background-color: #fff;
     }
 
     .navbar-expanded {
         position: absolute;
         right: 5px;
+    }
+    #navbar .navbar-toggler-icon {
+        color: #fff !important; /* Set the color to white */
     }
 }
 
@@ -388,13 +398,13 @@ footer {
 
     .intro-text {
         display: contents;
-        color: rgb(27, 71, 27);
+        color: rgb(16, 66, 16);
         margin-left: 10px;
         margin-right: 10px;
 
     }
     #btn-intro {
-        background-color: rgba(27, 71, 27, 0.425);
+        background-color: rgba(154, 181, 154, 0.984);
         margin-bottom: 10px;
     }
     /* contactpage on phones*/
