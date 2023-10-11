@@ -4,27 +4,31 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<!-- Section with a search form for searching -->
-<div class="container col-md-8 mt-3 offset-md-2">
-    <h1 class="text-center" id="h1-search">Search Reservations</h1>
+<!-- Section with a search form for searching reservations that been made-->
+<section>
+    <div class="container col-md-8 mt-3 offset-md-2">
+        <!-- Header for the search page -->
+        <h1 class="text-center" id="h1-search">Search Reservations</h1>
+        <!-- Form for searching -->
+        <form method="post">
 
-    <form method="post">
+            {{ form|crispy }}
 
-        {{ form|crispy }}
+            {% csrf_token %}
 
-        {% csrf_token %}
-
-        <button type="submit" class="btn btn-outline-secondary" id="btn-search">Search</button>
-    </form>
-
-    <h2 class="text-center">Search Results</h2>
-    <ul>
-        {% for res in reservations %}
+            <button type="submit" class="btn btn-outline-secondary" id="btn-search">Search</button>
+        </form>
+        <!-- Heading that gonna display the result of the search -->
+        <h2 class="text-center">Search Results</h2>
+        <!-- Looping troght the reservations and displays if there is one made, else it displays that no res was found -->
+        <ul>
+            {% for res in reservations %}
             <li> {{ res.user.username }} - {{ res.reservation_datetime }}</li>
-        {% empty %}
+            {% empty %}
             <li>No reservations found.</li>
-        {% endfor %}
-    </ul>
-</div>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
 
 {% endblock %}

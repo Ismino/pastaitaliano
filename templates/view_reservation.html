@@ -1,29 +1,34 @@
+<!--Tags that extends the base and includes the content in base.html to extend into this page and loads the static files-->
 {% extends 'base.html' %}
 
 {% load crispy_forms_tags %}
 
 {% block content %}
 
-<div class="container col-md-8 mt-3 offset-md-2">
-    <h1 class="text-center" id="h1reservation">Reservations</h1>
-
-    {% if reservation %}
-    <div class="row">
-        {% for res in reservation %}
-        <div class="col-md-6">
-            <div class="card mb-3">
-                <div class="card-body">
-                    <p class="card-text">Customer: {{ res.user.username }}</p>
-                    <p class="card-text">Reservation Date and Time: {{ res.reservation_datetime }}</p>
-                    <a class="btn btn-primary" href="{% url 'edit_or_delete_reservation' res.id %}">Edit or Delete</a>
+<!-- Section where tge code for viewing a reservation -->
+<section>
+    <div class="container col-md-8 mt-3 offset-md-2">
+        <h1 class="text-center" id="h1reservation">Reservations</h1>
+        <!--if/else statement with a loop , if there is a reserv made its gonna be displayed and  a. link to edit/delete, else no reservarions availibly-->
+        {% if reservation %}
+        <div class="row">
+            {% for res in reservation %}
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">Customer: {{ res.user.username }}</p>
+                        <p class="card-text">Reservation Date and Time: {{ res.reservation_datetime }}</p>
+                        <a class="btn btn-primary" href="{% url 'edit_or_delete_reservation' res.id %}">Edit or
+                            Delete</a>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        {% else %}
+        <p class="text-center">No reservations available.</p>
+        {% endif %}
     </div>
-    {% else %}
-    <p class="text-center">No reservations available.</p>
-    {% endif %}
-</div>
+</section>
 
 {% endblock content %}
