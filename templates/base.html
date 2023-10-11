@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head content with links -->
     <title>Pasta Italiano</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="UTF-8">
@@ -21,6 +22,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOoKSxhCVlhfzNkDhGWG-MkXc27_zHqoI&callback=initMap" async defer></script>
   </head>
 <body>
+  <!-- Navbar with hamburger menu with bootstrap css style-->
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" id="logo" href="{% url 'home' %}">Pasta Italiano</a>
@@ -63,6 +65,7 @@
           </div>
         </div>
       </nav>
+      <!-- This part of the code is taken from codeinstitues blog walkthrough, generates the pop up messeges and loops through them -->  
       <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -76,12 +79,12 @@
         </div>
     </div>
     
-    
+    <!-- Here is where the blockcontent in othes html files goes in between the 2 tags-->
 
     {% block content %}
     {% endblock content %}
 
-  
+  <!-- Footer with links centered with bootstrap -->
  <div class="container" id="footer">
    <footer class="py-3 my-4 h-10">
      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -93,7 +96,7 @@
    </footer>
  </div>  
 
-   
+   <!-- Tags to js file and google maps -->
 
     <script src="{% static 'js/scripts.js' %}"></script>  
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOoKSxhCVlhfzNkDhGWG-MkXc27_zHqoI&callback=initMap" async defer></script>
