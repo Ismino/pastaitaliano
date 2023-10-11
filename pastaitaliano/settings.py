@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+#Handels imports for messeges and env file
 from pathlib import Path
 import os 
 from django.contrib.messages import constants as messages
@@ -67,11 +67,18 @@ AUTHENTICATION_CLASSES = [
 
 SITE_ID = 1
 
+# This setting redirect the user after loging in/out, email verification is none.
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
+# This setting specifies which CSS framework should be used for styling forms.
+# In this case, it's set to 'bootstrap4', indicating that Bootstrap 4 styles should be used for forms.
+# Crispy-forms is a third-party Django app that helps with form rendering.
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+#This is the settngs for the messages
 
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-info',
@@ -109,6 +116,7 @@ TEMPLATES = [
         },
     },
 ]
+# This setting is used to configure the WSGI server that serves your Django application.
 
 WSGI_APPLICATION = 'pastaitaliano.wsgi.application'
 

@@ -330,6 +330,7 @@ footer {
     color: #fff !important;
 }
 
+/* Media queri for making desktop/ smaller screens with the width of 1400px responsive  */
 
 @media (max-width: 1400px) {
 
@@ -358,6 +359,8 @@ footer {
     }
 
 }
+
+/* Media queri for making desktop/ smaller screens with the width of 991px responsive  */
 
 @media (max-width: 991px) {
 
@@ -474,7 +477,7 @@ footer {
     }
 }
 
-
+/* Media queri for making  phones/ smaller screens with the width of 1400px responsive  */
 
 @media (max-width: 768px) {
 
