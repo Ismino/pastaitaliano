@@ -1,3 +1,4 @@
+<!--Tags that extends the base and includes the content in base.html to extend into this page and loads the static files-->
 {% extends "base.html" %}
 
 {% block content %}
@@ -5,29 +6,33 @@
 {% csrf_token %}
 
 {% load crispy_forms_tags %}
+<!-- Sectin containing form for making reservation, also includes bootstrap classes for styling -->
+<section>
+    <div class="container">
+        <div class="row" id="row-makereservation">
+            <div class="col-md-8 mt-3 offset-md-2">
+                <!-- Centered header -->
+                <h1 class="text-center" id="centered-h1">Make a Reservation</h1>
+                <!-- Reservation form -->
+                <form method="POST" action="{% url 'make_reservation' %}" name="form">
 
-<div class="container">
-    <div class="row" id="row-makereservation">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h1 class="text-center" id="centered-h1">Make a Reservation</h1>
-            <form method="POST" action="{% url 'make_reservation' %}" name="form">
-
-                {{ form|crispy }}
+                    {{ form|crispy }}
 
 
-                {% csrf_token %}
+                    {% csrf_token %}
 
 
-                <div class="mx-auto"><button class="btn btn-outline-secondary"
-                        type="submit">Submit Reservation</button>
-                </div>
-                <div class="col-md-8 mt-3 offset-md-2">
-                    <h3 class="text-center" id="centered-h3">Opening Hours: 9am to 9pm</h3>
-                </div>
+                    <div class="mx-auto"><button class="btn btn-outline-secondary" type="submit">Submit
+                            Reservation</button>
+                    </div>
+                    <!-- Under the form is a heading with the opening hours-->
+                    <div class="col-md-8 mt-3 offset-md-2">
+                        <h3 class="text-center" id="centered-h3">Opening Hours: 9am to 9pm</h3>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-
+</section>
 {% endblock %}
