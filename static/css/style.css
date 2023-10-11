@@ -1,3 +1,4 @@
+/* Logo and text styles */
 .intro-text {
     position: absolute;
     top: 40%;
@@ -28,6 +29,7 @@
 .card-title {
     font-family: 'Lobster Two', cursive;
 }
+/* Nav */
 
 .navbar {
     background-color: rgb(27, 71, 27);
@@ -59,6 +61,7 @@
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
 }
+/* contact page  & overall container */
 
 .container {
     max-width: 100%;
@@ -78,13 +81,7 @@
     margin-bottom: 200px;
 }
 
-.row row-cols-1 row-cols-md-3 g-4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 50px;
-
-}
+/* General body */
 
 body {
     display: flex;
@@ -96,6 +93,8 @@ body {
 .mb-3.flex.justify-center.w-full.mx-auto {
     margin-bottom: 200px;
 }
+
+ /* Login */
 
 .login {
     margin-top: 50px;
@@ -117,6 +116,7 @@ body {
 }
 
 /* Contact Style */
+
 #contact {
     font-family: 'Lobster Two', cursive;
     font-size: 40px;
@@ -255,15 +255,6 @@ label {
     margin: 0 !important;
 }
 
-.nav-item.nav-link.px-2.text-muted {
-    color: #fff !important;
-    font-size: 40px;
-}
-
-.nav.justify-content-center.border-bottom.pb-3.mb-3 a {
-    color: #fff !important;
-}
-
 #footer {
     padding: 0 !important;
     margin-top: auto !important;
@@ -330,7 +321,19 @@ footer {
     padding-bottom: 60px;
 }
 
+.nav-item.nav-link.px-2.text-muted {
+    color: #fff !important;
+    font-size: 40px;
+}
+
+.nav.justify-content-center.border-bottom.pb-3.mb-3 a {
+    color: #fff !important;
+}
+
+
 @media (max-width: 1400px) {
+
+    /* Home page */
 
     .container.col-md-8.mt-3.offset-md-2 {
         margin-left: 20px;
