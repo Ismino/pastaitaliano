@@ -5,35 +5,45 @@ from .forms import ReservationForm, ReservationSearchForm
 from django.contrib import messages
 from django.urls import reverse
 
-
+# view for homepage 
 def home_page(request):
     return render(request, 'index.html')
 
+# view for contact page
 def contact_page(request):
     return render(request, 'contact.html')
 
+# view for menu page 
 def menu_page(request):
     return render(request, 'menu.html')
 
+# view for reservation page for loged in users
 @login_required
 def make_reservation(request):
     if request.method == 'POST':
+        # Create a ReservationForm instance with the POST data
         form = ReservationForm(request.POST)
         if form.is_valid():
+            # Create a reservation object but don't save it to the database yet
             reservation = form.save(commit=False)
+            # Set the user for this reservation to the currently logged in user
             reservation.user = request.user
             reservation.status = 1
+            # Save the reservation to the database
             reservation.save()
             messages.success(request, 'Reservation successfully made.')
             return redirect('view_reservation')
         else:
             messages.error(request, 'Chosen reservation is not available.')
+            # If the request is not a POST request, create an empty ReservationForm
     form = ReservationForm()
     context = {
         'form': form
         }
+        # Render the make_reservation.html template with the form
     return render(request, 'make_reservation.html', context)
 
+# Django view for searching reservations with user authentication. Handles both GET and POST requests. 
 @login_required
 def search_reservation(request):
     if request.method == 'POST':
@@ -63,6 +73,7 @@ def search_reservation(request):
 
     return render(request, 'search_reservations.html', context)
 
+#  View that handles the reservations, so the user can see them
 @login_required
 def view_reservation(request):
     reservation = Reservation.objects.filter(user=request.user)
@@ -71,6 +82,7 @@ def view_reservation(request):
         } 
     return render(request, 'view_reservation.html', context)
 
+# View that handels edid/delete reservations
 @login_required
 def edit_or_delete_reservation(request, reservation_id):
     reservation = get_object_or_404(Reservation, id=reservation_id)
