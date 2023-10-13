@@ -92,21 +92,21 @@ Add your user stories here. You want to include first time visitors and returnin
 
 ### Imagery
 
-
-
-### Wireframes
-
-Add the images or links for your wireframes here.
-
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+- The site has 6 photos taken from [pixabay](https://pixabay.com/sv/images/search/) which was free, and two photos bought from [istock](https://www.istockphoto.com/se)
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+ * Home page: The home page has an cover photo on pasta, a short intro text and a logo and a button that takes the user to the reservation page if the user is loged in, otherwise the user will be requiered to log in or register first. On top of every page is a nav bar wcich is easy to use.
 
-This section can be used to explain what pages your site is made up of.
+ * Menu page: The menu page has cards in columns with pictures and a short explanation of the dishes the costumer can choose from. As a background there is a red/white tablecloth. 
+
+ * Contact page: The contact page is very simple and easy to read, there is one section with the phone number, one with the email and one with the location that has an google map. 
+
+ * Login page: The log in page is a simple form.
+
+ * Register page: A simple fill out form, with simple colors and a button.
+
+ * Make a reservation page: A page where the user can choose the size of the table
 
 ### General features on each page
 
