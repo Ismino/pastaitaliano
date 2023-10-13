@@ -22,7 +22,6 @@
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
@@ -106,13 +105,19 @@ Add your user stories here. You want to include first time visitors and returnin
 
  * Register page: A simple fill out form, with simple colors and a button.
 
- * Make a reservation page: A page where the user can choose the size of the table
+ * Make a reservation page: A page where the user can choose the size of the table.
 
-### General features on each page
+ * Search page: A simple page where the user can search for reservations.
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+ * My reservations page: A page where the user can view their reservations and if there is a reservation they can also click the buttun edit/delete that redirect the user to the edit page.
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+ * Edit/Delete page: A page very simple where the user has the ability to edit the time/date of the reservation or delete the booking.
+
+ * Logout page: When the user wants to log out the page will ask if the user is shure otherwise the user will be logged out. all of the pages with forms are simple and easy. With the withe background and the green navbar and a red footer.
+
+ * Navbar: The navbar is in dark green with white text and easy understandibly nav links, when the screen becomes smaller the menu becomes a hamburger menu. 
+
+ * Footer: The footer is in red with white text and contains links to social media accounts. 
 
 ### Future Implementations
 
