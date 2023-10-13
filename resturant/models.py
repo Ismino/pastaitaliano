@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+#imports needed for the models
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 
@@ -10,13 +11,6 @@ STATUS_CHOICES = (
     (1, 'Confirmed'),
     (2, 'Cancelled'),
 )
-
-# Class for the resturant name to be used in relations to the other Classes
-#class Restaurant(models.Model):
-#    name = models.CharField(max_length=200)
-
-#    def __str__(self):
-#       return self.name
 
 # Class for the Table that handels the seats and info of the table 
 class Table(models.Model):

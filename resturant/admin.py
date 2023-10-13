@@ -1,12 +1,15 @@
+# Imports of admin and also  of Tabel and Reservation model
 from django.contrib import admin
 from .models import Table, Reservation
 
+# Handels the table in the admin register
 @admin.register(Table)
 class TableAdmin(admin.ModelAdmin):
     list_display = ('seats', 'min_people', 'max_people',)
     list_filter = ('seats', 'min_people', 'max_people',)
     search_fields = ('user__username', 'user')
 
+# Handels the reservations in the admin register
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
     list_display = ('table', 'user', 'reservation_datetime', 'status',)
