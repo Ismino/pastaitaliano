@@ -49,8 +49,6 @@
 
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
-
 ### Client Goals
 
 * To be able to view the reservation system both from phones and bigger screens.
@@ -121,27 +119,17 @@ Add your user stories here. You want to include first time visitors and returnin
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+I've would like to add nicer UI, or maybe some extra pages.
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+The site is accesibly to all screens and in smaller screens the navbar becomes an hamburger menu. The fonts are easy to read and ive included icons to easily see what the textes will provide. The colors are darker and the fonts and text withe, thats makes it easy for the readers to see and read.
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+Html, CSS , Javascript and Python+Django. SQL for databases.
 
 ### Frameworks, Libraries & Programs Used
 
@@ -173,30 +161,23 @@ Place instructions on how to clone your project here.
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+TESTING.md file [here](testing.md)
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
+For the Readme structure i give credits to [here](https://github.com/kera-cudmore/BookWorm#Credits), thats where I looked on the structure of the Readme file.
+I also took inpiretion from [](), and code institutes walktrough blog [](). 
 
-The Credits section is where you can credit all the people and sources you used throughout your project.
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+I took inpiretion from [](), and code institutes walktrough blog []().
 
 ### Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+I made the content on the site by myself.
 
-###  Media
-
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+I like to thank my mentor Jubril and all of the tutors in the code institute team for helping me out during the project. 
