@@ -2,7 +2,7 @@
 
 - A website for all the pasta lovers who wants to book a table at an amazing pasta resturant in Stockholm. Here the user/costumer can easily navigate troght the site and book a table in different sizes. The user can also edit or delete their reservation easily.
 
-![Screenshoot](assets/images/)
+![Screenshoot](static/image/device.png)
 
 ---
 
