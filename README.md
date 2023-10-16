@@ -145,11 +145,29 @@ Html, CSS , Javascript and Python+Django. SQL for databases.
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
+1. [Django:](https://www.djangoproject.com/)
+    - Django Framework is a full stack framework based on python.
+1. [Bootstrap 5.1.3:](https://startbootstrap.com/theme/business-casual)
+    - Bootstrap is a css framework that uses classes to style.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts to set the fonts of the site.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome is a site to get icons from and theres where i got my icons from.
+1. [jQuery:](https://jquery.com/)
+    - jQuery is a type of javascript, it makes the code smaller in amount.
+1. [Git:](https://git-scm.com/)
+    - Git was used for version control.
+1. [GitHub:](https://github.com/)
+    - GitHub is where my repositry is found.
+1. [Figma:](https://www.figma.com/templates/wireframe-kits/)
+    - Designing program where i made my wireframes.  
+1. [ElephantSQL:](https://www.elephantsql.com/)
+    - Elephant Sql database.
+1. [Cloudinary:](https://cloudinary.com/)
+    - Media files handler and cloud.
+1. [Heroku:](https://www.heroku.com/)
+    -  Heroku is where i deployed my app.
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
 
 ## Deployment & Local Development
 
