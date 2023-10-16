@@ -7,18 +7,26 @@ from django.contrib import messages
 from django.urls import reverse
 
 # view for homepage 
+
+
 def home_page(request):
     return render(request, 'index.html')
 
 # view for contact page
+
+
 def contact_page(request):
     return render(request, 'contact.html')
 
 # view for menu page 
+
+
 def menu_page(request):
     return render(request, 'menu.html')
 
 # view for reservation page for loged in users
+
+
 @login_required
 def make_reservation(request):
     if request.method == 'POST':
@@ -41,10 +49,12 @@ def make_reservation(request):
     context = {
         'form': form
         }
-        # Render the make_reservation.html template with the form
+    # Render the make_reservation.html template with the form
     return render(request, 'make_reservation.html', context)
 
 # Django view for searching reservations with user authentication. Handles both GET and POST requests. 
+
+
 @login_required
 def search_reservation(request):
     if request.method == 'POST':
@@ -75,6 +85,8 @@ def search_reservation(request):
     return render(request, 'search_reservations.html', context)
 
 #  View that handles the reservations, so the user can see them
+
+
 @login_required
 def view_reservation(request):
     reservation = Reservation.objects.filter(user=request.user)
@@ -84,6 +96,8 @@ def view_reservation(request):
     return render(request, 'view_reservation.html', context)
 
 # View that handels edid/delete reservations
+
+
 @login_required
 def edit_or_delete_reservation(request, reservation_id):
     reservation = get_object_or_404(Reservation, id=reservation_id)
@@ -111,8 +125,3 @@ def edit_or_delete_reservation(request, reservation_id):
         'form': form
     }
     return render(request, 'edit_or_delete_reservation.html', context)
-
-           
-
-
-

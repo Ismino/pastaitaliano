@@ -3,6 +3,8 @@ from django.contrib import admin
 from .models import Table, Reservation
 
 # Handels the table in the admin register
+
+
 @admin.register(Table)
 class TableAdmin(admin.ModelAdmin):
     list_display = ('seats', 'min_people', 'max_people',)
@@ -10,6 +12,8 @@ class TableAdmin(admin.ModelAdmin):
     search_fields = ('user__username', 'user')
 
 # Handels the reservations in the admin register
+
+
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
     list_display = ('table', 'user', 'reservation_datetime', 'status',)
