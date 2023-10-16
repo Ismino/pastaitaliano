@@ -188,7 +188,7 @@ TESTING.md file [here](testing.md)
 ## Credits
 
 For the Readme structure i give credits to [here](https://github.com/kera-cudmore/BookWorm#Credits), thats where I looked on the structure of the Readme file.
-I also took inpiretion from [](), and code institutes walktrough blog [](). 
+I also took inpiretion from [renatasresturant](https://github.com/renatalantos/booking-system/blob/main/README.md#technologies-used), and code institutes walktrough blog [codeinstitute](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/templates/base.html). 
 
 
 ### Code Used
