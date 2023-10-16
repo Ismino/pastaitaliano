@@ -47,6 +47,20 @@
 
 ### User Stories
 
+- As a Site User I can  View the menu and see the prices so that I can decide if it's something for me
+
+- As a Site User I can Log in and see availibly booking options and be able to specify the numer of guests so that I can book a time that fits me and my company
+
+- As a Site User I can Create an Account so that I can handle my bookings and make bookings
+
+- As a SIte User/Owner I can Delete reservations so that if there is a need of cancellation it can be done easily
+
+- As a Site User/Owner I can Update reservations so that I can make changes
+
+- As a Site owner I can see a list of my costumers reservations so that I have an overview about my resturant
+
+- As a Site owner I can have a admin dashboard so that I can manually manage reservations
+
 ### Client Goals
 
 * To be able to view the reservation system both from phones and bigger screens.
