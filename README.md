@@ -151,14 +151,6 @@ Include instructions here on how to deploy your project. For your first project 
 
 The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
 
-#### How to Fork
-
-Place instructions on how to fork your project here.
-
-#### How to Clone
-
-Place instructions on how to clone your project here.
-
 ## Testing
 
 TESTING.md file [here](testing.md)
@@ -171,7 +163,7 @@ I also took inpiretion from [](), and code institutes walktrough blog []().
 
 ### Code Used
 
-I took inpiretion from [](), and code institutes walktrough blog []().
+I took inpiretion from [renatasresturant](https://github.com/renatalantos/booking-system), and code institutes walktrough blog [codeinstitue](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/templates/base.html). Some parts of the code is taken from these two links.
 
 ### Content
 
