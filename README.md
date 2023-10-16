@@ -89,6 +89,20 @@
 
 - The site has 6 photos taken from [pixabay](https://pixabay.com/sv/images/search/) which was free, and two photos bought from [istock](https://www.istockphoto.com/se)
 
+### Wireframes
+
+- Ive made some easy and simple wireframes with figma, the wireframe for centered forms are for all forms that the site handels and are general.
+
+![Screenshoot](static/image/wireframe1.png)
+
+![Screenshoot](static/image/menu.png)
+
+![Screenshoot](static/image/contact.png)
+
+![Screenshoot](static/image/forms.png)
+
+
+
 ## Features
 
  * Home page: The home page has an cover photo on pasta, a short intro text and a logo and a button that takes the user to the reservation page if the user is loged in, otherwise the user will be requiered to log in or register first. On top of every page is a nav bar wcich is easy to use.
