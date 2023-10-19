@@ -308,6 +308,10 @@ footer {
 }
 
 /* Nav */
+.navbar-nav {
+    margin-left: 20px;
+    margin-top: 5px;
+}
 #navbar .navbar-toggler-icon {
     color: #fff !important; /* Set the color to white */
 }
@@ -428,6 +432,8 @@ footer {
         transition: margin-left 0.5s;
     }
 
+    /* Nav bar*/
+
     .navbar-collapse {
         position: fixed;
         top: 0;
@@ -491,6 +497,7 @@ footer {
     .navbar-expanded {
         position: absolute;
         right: 5px;
+    
     }
     #navbar .navbar-toggler-icon {
         color: #fff !important; /* Set the color to white */
