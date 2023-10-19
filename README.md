@@ -68,13 +68,6 @@
 * To make it easy for the costumers to find contact info and location info.
 * To make it easy for the costumers to see the menu.
 
-### Client Goals
-
-* To be able to view the reservation system both from phones and bigger screens.
-* To make it easy for costumers to book and edit/delete a table in the resturant.
-* To make it easy for the costumers to find contact info and location info.
-* To make it easy for the costumers to see the menu.
-
 ### First Time Visitor Goals
 
 * Want to book a table.
@@ -183,17 +176,36 @@ Html, CSS , Javascript and Python+Django. SQL for databases.
     -  Heroku is where i deployed my app.
 
 
-## Deployment & Local Development
+## Deployment 
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
+Final deployed work [here](https://pastaitaliano-4a14a7e65e7b.herokuapp.com/). Deployed on heroku [heroku](https://id.heroku.com/login). 
 
-### Deployment
+Steps of deployment:
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
-
-### Local Development
-
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+1. Create a github repositry, To create a GitHub repository, I navigated to GitHub, logged in, and clicked on the "+" sign in the upper right corner. Then, I selected "New Repository" and followed the steps to create the repository, including naming it, adding a description, and configuring repository settings.
+2. Create user stories in github.
+3. In the Gitpod environment, I created a Django project with the necessary files and an app.
+4. I set up a Heroku app on the Heroku platform by navigating to the Heroku Dashboard and clicking on "New" > "Create new app". I provided a unique name for my app and created it.
+5. Creating a database at elephantSQL. 
+6. Create a env.py file in your environment and add it to .gitignore. In the env file add 'import os and add in os.environ["DATABASE_URL"]="here you put your database url from elephant sql", also add the database url in heroku under config vars.
+7. Generete a secret key and add it in the env.py file 'os.environ["SECRET_KEY"]="secret key here"', also add it in heroku under config vars.
+8. In settings.py, I imported os and set up a conditional statement to use environment variables from env.py outside the development environment, including the secret key.
+9. I commented out the existing code for databases in settings.py and added code to utilize the Django database URL specified in env.py and Heroku config vars.
+11. I applied these changes in Gitpod using `python3 manage.py migrate`.
+12. Add in another config var to heroku port 8000.
+13. To handle static and media files on Cloudinary, I obtained the API Environment Variable from my Cloudinary account dashboard.
+14. I included this variable in env.py and Heroku Settings > config vars.
+15. Additionally, I added `DISABLE_COLLECTSTATIC = 1` to the Heroku config vars.
+16. In settings.py, I added `cloudinary` and `cloudinary_storage` to the list of installed apps.
+17. I configured the static file storage, static file directory, static root, media URL, default file storage, and templates directory in settings.py.
+18. I appended my Heroku app name followed by `herokuapp.com` to the `ALLOWED_HOSTS` variable in settings.py, along with 'localhost' for the development environment.
+19. At the project's top level, I created three directories: media, static, and templates.
+20. I added a Procfile to the top-level directory.
+21. After performing a `git add`, `git commit`, and `git push`, I moved to the Deployment tab in Heroku, enabled Automated Deployment, connected my GitHub repository, and deployed the branch.
+22. Upon opening the deployed app, I was greeted with a success message and a rocket icon.
+23. For the final deployment step, I set Debug to False in settings.py in Gitpod.
+24. In Heroku, I removed the `DISABLE_COLLECTSTATIC` variable.
+25. I saved all changes and performed a `git add`, `git commit`, and `git push".
 
 ## Testing
 
