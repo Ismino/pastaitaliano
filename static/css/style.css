@@ -309,8 +309,8 @@ footer {
 
 /* Nav */
 .navbar-nav {
-    margin-left: 20px;
-    margin-top: 5px;
+    margin-left: 20px !important;
+    margin-top: 10px !important;
 }
 #navbar .navbar-toggler-icon {
     color: #fff !important; /* Set the color to white */
