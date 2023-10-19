@@ -29,9 +29,8 @@
   * [Languages Used](#languages-used)
   * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-* [Deployment & Local Development](#deployment--local-development)
+* [Deployment](#deployment)
   * [Deployment](#deployment)
-  * [Local Development](#local-development)
 
 * [Testing](#testing)
 
