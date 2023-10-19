@@ -112,28 +112,54 @@
 ## Features
 
  * Home page: The home page has an cover photo on pasta, a short intro text and a logo and a button that takes the user to the reservation page if the user is loged in, otherwise the user will be requiered to log in or register first. On top of every page is a nav bar wcich is easy to use.
+ 
+ ![Screenshoot](static/image/homepage.png)
+ ![Screenshoot](static/image/homepagephone.png)
 
  * Menu page: The menu page has cards in columns with pictures and a short explanation of the dishes the costumer can choose from. As a background there is a red/white tablecloth. 
 
+ ![Screenshoot](static/image/menucard.png)
+
  * Contact page: The contact page is very simple and easy to read, there is one section with the phone number, one with the email and one with the location that has an google map. 
+
+ ![Screenshoot](static/image/contactpage.png)
 
  * Login page: The log in page is a simple form.
 
+![Screenshoot](static/image/login.png)
+
  * Register page: A simple fill out form, with simple colors and a button.
+
+ ![Screenshoot](static/image/register.png)
 
  * Make a reservation page: A page where the user can choose the size of the table.
 
+ ![Screenshoot](static/image/makeres.png)
+
  * Search page: A simple page where the user can search for reservations.
+
+ ![Screenshoot](static/image/serch.png)
 
  * My reservations page: A page where the user can view their reservations and if there is a reservation they can also click the buttun edit/delete that redirect the user to the edit page.
 
+ ![Screenshoot](static/image/viewres.png)
+
  * Edit/Delete page: A page very simple where the user has the ability to edit the time/date of the reservation or delete the booking.
+
+ ![Screenshoot](static/image/edit:delete.png)
 
  * Logout page: When the user wants to log out the page will ask if the user is shure otherwise the user will be logged out. all of the pages with forms are simple and easy. With the withe background and the green navbar and a red footer.
 
- * Navbar: The navbar is in dark green with white text and easy understandibly nav links, when the screen becomes smaller the menu becomes a hamburger menu. 
+ ![Screenshoot](static/image/logout.png)
+
+ * Navbar: The navbar is in dark green with white text and easy understandibly nav links, when the screen becomes smaller the menu becomes a hamburger menu.
+
+ ![Screenshoot](static/image/navbar.png)
+ ![Screenshoot](static/image/navbarphone.png) 
 
  * Footer: The footer is in red with white text and contains links to social media accounts. 
+
+![Screenshoot](static/image/footer.png)
 
 ### Future Implementations
 
